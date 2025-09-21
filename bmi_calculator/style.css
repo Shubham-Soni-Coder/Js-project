@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+
+
+h1{
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 0px #333, 4px 4px 0px #666, 6px 6px 0px #999;
+}
+
+.height , .weight{
+    margin-top: 30px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+#height_input , #weight_input{
+    height: 30px;   
+    background-color: white;
+}
+
+button{
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

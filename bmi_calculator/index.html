@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form">
+        <h1 class="first"> BMI Calculator </h1>
+
+        <div class="height">
+            <label for="height_input"> Height in cm : </label>
+            <input type="text" required placeholder="Enter your height" id="height_input">
+        </div> 
+
+        <div class="weight">
+            <label for="weight_input"> Weight in Kg :  </label>
+            <input type="text" required placeholder="Enter Your Weight" id="weight_input">
+        </div>
+
+        <div class="button">
+        <button> Calculate</button>
+        </div>
+
+        <div class="result">
+        
+        </div>
+    </form>
+
+    <script>
+        let button = document.querySelector(".button");
+        
+        
+        form.addEventListener("sumit",() =>{
+        const height = parseInt(document.querySelector(".height").value);
+        const weight =parseInt(document.querySelector(".weight").value);
+        let result = document.querySelector(".result")
+
+        if (height === '' || height < 0 || isNaN(height)){
+            result.innerHTML = `Please give a valid height ${height}`            
+        } else if (weight === '' || weight < 0 || isNaN(weight)){
+            result.innerHTML = `Please give a valid width ${weight}`            
+        }
+        else{}
+    });
+
+
+    </script>
+
+</body>
+</html>
